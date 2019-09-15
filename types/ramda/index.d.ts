@@ -28,6 +28,7 @@
 //                 Brekk Bockrath <https://github.com/brekk>
 //                 Aram Kharazyan <https://github.com/nemo108>
 //                 Jituan Lin <https://github.com/jituanlin>
+//                 John Frolov <https://github.com/johnfrolov>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 3.5
 
@@ -1702,8 +1703,9 @@ declare namespace R {
 
         /**
          * Returns the number of elements in the array by returning list.length.
+         * Returns the number of characters in the string by returning string.length.
          */
-        length<T>(list: ReadonlyArray<T>): number;
+        length<T>(list: ReadonlyArray<T> | string): number;
 
         /**
          * Returns a lens for the given getter and setter functions. The getter

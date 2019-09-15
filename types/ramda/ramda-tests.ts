@@ -421,6 +421,9 @@ R.times(i, 5);
 
 (() => {
     R.length([1, 2, 3]); // => 3
+    R.length("abc"); // => 3
+    R.length(""); // => 0
+    R.length(["a", "b", "c"]); // => 3
 });
 
 (() => {
@@ -769,6 +772,9 @@ interface Obj {
 () => {
     R.length([]); // => 0
     R.length([1, 2, 3]); // => 3
+    R.length("abc"); // => 3
+    R.length(""); // => 0
+    R.length(["a", "b", "c"]); // => 3
 };
 
 () => {
